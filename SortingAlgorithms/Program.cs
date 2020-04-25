@@ -8,7 +8,11 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             List<int> list = ListGenerator.GenerateListOfIntegers(100, 0, 100);
-            Console.WriteLine(list);
+
+            foreach (int listItem in list)
+            {
+                Console.WriteLine(listItem);
+            }
         }
     }
 }

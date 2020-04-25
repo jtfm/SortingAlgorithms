@@ -1,11 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 
 namespace SortingAlgorithms
 {
-    class AlgorithmRunner
+    public class AlgorithmRunner
     {
-        
+        public Action Algorithms { get; set; }
+
+        public void RunAlgorithm()
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            // Algorithm.Run
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.ElapsedMilliseconds);
+        }
     }
 }
